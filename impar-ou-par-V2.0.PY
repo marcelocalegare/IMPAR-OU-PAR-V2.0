@@ -2,8 +2,6 @@ from random import randint
 
 titulo = 'VAMOS JOGAR PAR OU IMPAR'
 
-fim = 'FIM DO PROGRAMA'
-
 par_impar = """DIGITE UMA OPÇÃO:
 [P] - PAR
 [I] - IMPAR"""

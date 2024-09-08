@@ -1,30 +1,23 @@
 from random import randint
 
-titulo = 'VAMOS JOGAR PAR OU IMPAR'
+
 
 par_impar = """DIGITE UMA OPÇÃO:
 [P] - PAR
 [I] - IMPAR"""
 
 cont = 0
-raiva = 0
-
 
 print('='*30)
-print(f'{titulo:=^30}')
+print(f'{VAMOS JOGAR IMPAR OU PAR:=^30}')
 print('='*30)
 
 while True:
     computador = randint(0,10)
     n = int(input('DIGITE UM NUMERO DE 0 A 10: '))
     while n > 10:
-        raiva += 1
         print(f'|VALOR NÃO ACEITO!|')
         n = int(input('DIGITE UM NUMERO DE 0 A 10: '))
-        if raiva == 10:
-            raiva = 0
-            print('\nCARALHO VOCÊ AINDA NAO ENTENDEU QUE É PRA DIGITAR UM NUMERO DE 0 A 10 O ARROMBADO PRESTA ATENÇÃO PORRA...')
-            n = int(input('DIGITE UM NUMERO DE 0 A 10 POR FAVOR É SUA ULTIMA TENTATIVA: '))    
     print(f'|VALOR ACEITO, MUITO BEM!|\n')
     
     print(par_impar)

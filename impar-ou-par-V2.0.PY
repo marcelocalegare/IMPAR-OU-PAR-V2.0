@@ -9,7 +9,7 @@ par_impar = """DIGITE UMA OPÇÃO:
 cont = 0
 
 print('='*30)
-print(f'{VAMOS JOGAR IMPAR OU PAR:=^30}')
+print(f'{"VAMOS JOGAR IMPAR OU PAR":=^30}')
 print('='*30)
 
 while True:
@@ -18,7 +18,7 @@ while True:
     while n > 10:
         print(f'|VALOR NÃO ACEITO!|')
         n = int(input('DIGITE UM NUMERO DE 0 A 10: '))
-    print(f'|VALOR ACEITO, MUITO BEM!|\n')
+    print('|VALOR ACEITO, MUITO BEM!|\n')
     
     print(par_impar)
     opc = str(input('\nQUAL OPÇÃO VOCÊ ESCOLHE?')).strip().upper() 
